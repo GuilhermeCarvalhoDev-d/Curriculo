@@ -42,3 +42,4 @@ O Sistema de Visitas que foi criado como uma experiência personalizada e bem-hu
 
 Você pode conversar com o criador através do
 <a href="https://www.instagram.com/ghsantos_i/">Instagram</a>, e la conhecer mais sobre ele e seus projetos. 💻# Curriculo
+# Curriculo

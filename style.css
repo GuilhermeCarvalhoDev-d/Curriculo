@@ -1,0 +1,228 @@
+:root{
+    --ink: #1c2430;
+    --ink-soft: #384152;
+    --paper: #faf9f6;
+    --paper-dim: #f0eee8;
+    --accent: #b3873f;
+    --line: #d9d5cb;
+    --sidebar: #1c2430;
+    --sidebar-text: #e7e4dc;
+    --sidebar-muted: #9aa2b0;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper-dim);
+    line-height: 1.5;
+  }
+
+  .folha{
+    max-width: 920px;
+    margin: 24px auto;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    box-shadow: 0 0 0 1px var(--line);
+  }
+
+  header{
+    background: var(--sidebar);
+    color: var(--sidebar-text);
+    padding: 36px 26px;
+  }
+
+  .foto{
+    width: 128px;
+    height: 128px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.18);
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    background: #2a3241;
+  }
+
+  header h1{
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    color: #fff;
+  }
+
+  .cargo{
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 22px;
+  }
+
+  header hr{
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.14);
+    margin: 22px 0;
+  }
+
+  .bloco-lateral h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--sidebar-muted);
+    margin: 0 0 10px;
+  }
+
+  .bloco-lateral p, .bloco-lateral li{
+    font-size: 0.88rem;
+    color: var(--sidebar-text);
+  }
+
+  .bloco-lateral a{
+    color: var(--sidebar-text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  .bloco-lateral a:hover{ color: var(--accent); }
+
+  .contatos p{ margin: 0 0 8px; }
+
+  .musica p{ margin: 0 0 8px; }
+
+  .musica audio{
+    width: 100%;
+    height: 34px;
+    display: block;
+  }
+
+  .musica .audio-status{
+    color: var(--sidebar-muted);
+    font-size: 0.75rem;
+    margin-top: 8px;
+  }
+
+  .skills ul, .idiomas ul, .links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skills li{
+    margin-bottom: 7px;
+    padding-left: 14px;
+    position: relative;
+  }
+  .skills li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background: var(--accent);
+  }
+
+  .links li{ margin-bottom: 8px; }
+
+  main{
+    padding: 36px 40px;
+  }
+
+  section{ margin-bottom: 28px; }
+  section:last-of-type{ margin-bottom: 0; }
+
+  main h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+
+  main section > hr{
+    border: none;
+    border-top: 2px solid var(--accent);
+    width: 34px;
+    margin: 0 0 14px;
+  }
+
+  main p{ margin: 0 0 10px; color: var(--ink-soft); font-size: 0.94rem; }
+
+  .item{ margin-bottom: 16px; }
+  .item:last-child{ margin-bottom: 0; }
+
+  .item h3{
+    font-size: 0.96rem;
+    margin: 0 0 2px;
+    color: var(--ink);
+  }
+
+  .item .periodo{
+    font-size: 0.82rem;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .item ul{
+    margin: 6px 0 0;
+    padding-left: 18px;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  .item ul li{ margin-bottom: 3px; }
+
+  .projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .projeto{
+    border: 1px solid var(--line);
+    padding: 14px 16px;
+  }
+
+  .projeto h3{ font-size: 0.92rem; margin: 0 0 4px; }
+  .projeto p{ font-size: 0.85rem; margin: 0 0 8px; }
+  .projeto a{ font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+  .projeto a:hover{ text-decoration: underline; }
+
+  .video-wrap{
+    border: 1px dashed var(--line);
+    padding: 16px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    background: var(--paper-dim);
+  }
+
+  .video-wrap video{
+    width: 100%;
+    max-width: 360px;
+    display: block;
+    margin-top: 10px;
+    background: #000;
+  }
+
+  footer{
+    grid-column: 1 / -1;
+    padding: 14px 40px;
+    border-top: 1px solid var(--line);
+    font-size: 0.78rem;
+    background: var(--ink);
+    color: #cbd1db;
+    text-align: right;
+  }
+
+  @media (max-width: 720px){
+    .folha{ grid-template-columns: 1fr; }
+    .projetos{ grid-template-columns: 1fr; }
+    footer{ text-align: left; }
+  }
+
+  @media print{
+    body{ background: #fff; }
+    .folha{ box-shadow: none; margin: 0; max-width: 100%; }
+  }
